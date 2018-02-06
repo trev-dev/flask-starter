@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flask Starter</title>
+  <link rel="icon" href="static/img/fav.png">
+  <!-- Assets from CSS bundler -->
+  {% assets "css_modules" %}
+    <link rel="stylesheet" type="text/css" href=" {{ ASSET_URL }} ">
+  {% endassets %}
+</head>
+<body>
+  <!-- body block import -->
+  {% block body %}
+
+  {% endblock %}
+  <footer>
+    <!-- Assets from JS bundler -->
+    {% assets "js_modules" %}
+      <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+  </footer>
+</body>
+</html>
