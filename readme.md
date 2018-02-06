@@ -35,13 +35,13 @@ python app.py
 1) Setup hosting for a domain and ensure you have [passenger enabled](https://help.dreamhost.com/hc/en-us/articles/216385637-How-do-I-enable-Passenger-on-my-domain-) for Python apps.
 2) Use FTP/SFTP to move your project to its destination on Dreamhost (/home/username/example.com). *Be sure to avoid moving any caching or your env*.
 3) Use a secure shell to log in to your dreamhost hosting and run the same steps to setup your pip and virtualenv. If your python is out of date on Dreamhost, you can update it/install your own version.
-4) Configure passenger_wsgi.py to tie-in passenger to your application - specifically the destination of the python file inside ./env/bin/python. You'll need to change the "website" in the INTERP string.
+4) Configure passenger_wsgi.py to tie-in passenger to your application - specifically the destination of the python file inside ./env/bin/python. You'll need to change the "website" and username in the INTERP string.
 
 
 ```python
 import sys, os
 
-INTERP = '/home/user/<website.com>/env/bin/python'
+INTERP = '/home/<username>/<website.com>/env/bin/python'
 if sys.executable != INTERP:
     os.execl(INTERP, INTERP, *sys.argv)
 sys.path.append(os.getcwd())
