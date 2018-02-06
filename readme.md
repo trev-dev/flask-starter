@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 5) Launch the app and preview it in your browser on localhost:5000.
 ```
-python app.py
+python launcher.py
 ```
 
 6) Edit/change/develop your site using [Flask + Jinja2](http://flask.pocoo.org/docs/0.12/) (Or whatever other templating you wish to use)
