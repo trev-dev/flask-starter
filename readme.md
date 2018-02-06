@@ -1,6 +1,8 @@
 # Flask Starter Web Application
 ## What's included
 In this repo is flask web-app skeleton for a basic API or Flask powered website. The stylesheets are Sassy and Bootstrap 4 is included in the Sass libs folder. Everything you need here (except a Sass precompiler) to get started with a Flask App along with deployment instructions for Dreamhost.
+
+[See this project live here](http://flask-skeleton.trevdev.ca/)
 ## Requirements
 - [Python](https://www.python.org/downloads/) (preferrably Python3) 
 - [pip package manager](https://pip.pypa.io/en/stable/installing/)
