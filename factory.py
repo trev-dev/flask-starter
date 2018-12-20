@@ -12,21 +12,21 @@ def create_app(env):
 
     # Instantiate Flask
     app = Flask(
-                __name__,
-                template_folder=config.TEMPLATE_FOLDER,
-                static_url_path=config.STATIC_PATH,
-                static_folder=config.STATIC_FOLDER
-                )
+        __name__,
+        template_folder=config.TEMPLATE_FOLDER,
+        static_url_path=config.STATIC_PATH,
+        static_folder=config.STATIC_FOLDER
+    )
 
     app.config.from_object(config)
     assets = Environment(app)
     # JS/CSS bundlers for minification
     js = Bundle('js/site.js', filters='jsmin', output='js/bundle.min.js')
     css = Bundle(
-                'css/styles.css',
-                filters='cssmin',
-                output='css/bundle.min.css'
-                )
+        'css/styles.css',
+        filters='cssmin',
+        output='css/bundle.min.css'
+    )
 
     assets.register('js_modules', js)
     assets.register('css_modules', css)
