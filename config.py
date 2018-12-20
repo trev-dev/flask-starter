@@ -13,4 +13,4 @@ class DevConfig(BaseConfig):
 
 
 class ProdConfig(BaseConfig):
-    DEBUG = os.getenv('FLASK_DEBUG', True)
+    DEBUG = os.getenv('FLASK_DEBUG', False)
