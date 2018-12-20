@@ -14,7 +14,7 @@ def create_app(env):
     app = Flask(
                 __name__,
                 template_folder=config.TEMPLATE_FOLDER,
-                static_path=config.STATIC_PATH,
+                static_url_path=config.STATIC_PATH,
                 static_folder=config.STATIC_FOLDER
                 )
 
