@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Flask Starter Web Application](#org1375370)
-    1.  [What's included](#org127b58c)
-    2.  [Requirements](#orga4caf65)
-    3.  [Instructions](#orga421700)
-        1.  [Installation](#org89577ca)
-        2.  [Deployment (Dreamhost)](#org5149a36)
+1.  [Flask Starter Web Application](#org92fa630)
+    1.  [What's included](#orgadd18f3)
+    2.  [Requirements](#orgb3f67f5)
+    3.  [Instructions](#org2f37d69)
+        1.  [Installation](#orge3bb60b)
+        2.  [Deployment (Dreamhost)](#orgdce5522)
 
 
-<a id="org1375370"></a>
+<a id="org92fa630"></a>
 
 # Flask Starter Web Application
 
-<span class="underline">Now updated to Flask 1.0.2</span>
+\#Now updated to Flask 1.0.2\_
 
 
-<a id="org127b58c"></a>
+<a id="orgadd18f3"></a>
 
 ## What's included
 
@@ -25,7 +25,7 @@ In this repo is flask web-app skeleton for a basic API or Flask powered website.
 [See this project live here](<http://flask-skeleton.trevdev.ca/>)
 
 
-<a id="orga4caf65"></a>
+<a id="orgb3f67f5"></a>
 
 ## Requirements
 
@@ -35,12 +35,12 @@ In this repo is flask web-app skeleton for a basic API or Flask powered website.
 -   SASS/SCSS compiler (or not, it's up to you. My SASS files are included in the repo.)
 
 
-<a id="orga421700"></a>
+<a id="org2f37d69"></a>
 
 ## Instructions
 
 
-<a id="org89577ca"></a>
+<a id="orge3bb60b"></a>
 
 ### Installation
 
@@ -62,11 +62,11 @@ In this repo is flask web-app skeleton for a basic API or Flask powered website.
     1.  Edit/change/develop your site using [Flask + Jinja2](<http://flask.pocoo.org/docs/0.12/>) (Or whatever other templating you wish to use)
 
 
-<a id="org5149a36"></a>
+<a id="orgdce5522"></a>
 
 ### Deployment (Dreamhost)
 
-1.  Setup hosting for a domain and ensure you have [passenger enabled](<https://help.dreamhost.com/hc/en-us/articles/216385637-How-do-I-enable-Passenger-on-my-domain>-) for Python apps.
+1.  Setup hosting for a domain and ensure you have [passenger enabled](https://help.dreamhost.com/hc/en-us/articles/216385637-How-do-I-enable-Passenger-on-my-domain) for Python apps.
 2.  Use FTP/SFTP to move your project to its destination on Dreamhost (/home/username/example.com). **Be sure to avoid moving any caching or your env**.
 3.  Use a secure shell to log in to your dreamhost hosting and run the same steps to setup your pip and virtualenv. If your python is out of date on Dreamhost, you can update it/install your own version.
 4.  Configure passenger<sub>wsgi.py</sub> to tie-in passenger to your application - specifically the destination of the python file inside ./env/bin/python. You'll need to change the "website" and username in the INTERP string.
