@@ -3,3 +3,4 @@
 */.webassets-cache
 /.vscode
 /static/**/*.min.*
+readme.org
