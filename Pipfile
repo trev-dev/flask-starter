@@ -6,10 +6,10 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-flask = "*"
-flask-assets = "*"
-cssmin = "*"
-jsmin = "*"
+flask = "~=2.0"
+flask-assets = "~=2.0"
+cssmin = "~=0.2.0"
+jsmin = "~=2.2.2"
 
 [requires]
 python_version = "3.9"
