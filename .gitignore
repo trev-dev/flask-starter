@@ -4,3 +4,4 @@
 /.vscode
 /static/**/*.min.*
 readme.org
+pyrightconfig.json
