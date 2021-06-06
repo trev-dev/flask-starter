@@ -1,5 +1,8 @@
 import sys, os, subprocess
 
+os.environ['FLASK_APP'] = 'flaskr'
+os.environ['FLASK_ENV'] = 'development'
+
 CMD = ['python3', '-m', 'pipenv', 'run', 'which', 'python3']
 
 INTERP = subprocess.check_output(CMD).strip().decode('utf-8')
