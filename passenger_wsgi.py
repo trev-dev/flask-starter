@@ -1,7 +1,7 @@
 import sys, os, subprocess
 
 os.environ['FLASK_APP'] = 'flaskr'
-os.environ['FLASK_ENV'] = 'development'
+os.environ['FLASK_ENV'] = 'production'
 
 CMD = ['python3', '-m', 'pipenv', 'run', 'which', 'python3']
 
