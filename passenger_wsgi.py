@@ -1,4 +1,4 @@
-import sys, os, subprocess # noqa
+import sys, os, subprocess
 
 CMD = ['pipenv', 'run', 'which', 'python3']
 
@@ -7,4 +7,4 @@ if sys.executable != INTERP:
     os.execl(INTERP, INTERP, *sys.argv)
 sys.path.append(os.getcwd())
 
-from launcher import app as application # noqa
+from flaskr import application

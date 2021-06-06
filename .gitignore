@@ -1,7 +1,8 @@
 /env
-*__pycache__
-*/.webassets-cache
+node_modules
+__pycache__
+.webassets-cache
 /.vscode
-/static/**/*.min.*
 readme.org
+bundle.min.*
 pyrightconfig.json

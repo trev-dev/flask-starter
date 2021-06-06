@@ -1,0 +1,40 @@
+:root {
+	--py-blue: #0B8EAC;
+	--py-yellow: #E0A51E;
+}
+
+.fade-in {
+	opacity: 0;
+	transition: opacity .3s;
+	&.on {
+		opacity: 1;
+	}
+}
+
+#pyspinner {
+	width: 180px;
+	animation: pulse 1s infinite ease-in-out;
+	@media screen and (max-width: 500px) {
+		width: 100px;
+	}
+}
+
+.home > .row {
+	height: 100vh;
+}
+
+.py-blue {
+	color: var(--py-blue);
+}
+
+.py-yellow {
+	color: var(--py-yellow);
+}
+
+	.bold { font-weight: bold; }
+
+@keyframes pulse {
+	0% {transform: scale(1) }
+	50% { transform: scale(1.05) }
+	100% { transform: scale(1) }
+}
