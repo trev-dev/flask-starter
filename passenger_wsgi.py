@@ -1,6 +1,6 @@
 import sys, os, subprocess
 
-CMD = ['pipenv', 'run', 'which', 'python3']
+CMD = ['python3', '-m', 'pipenv', 'run', 'which', 'python3']
 
 INTERP = subprocess.check_output(CMD).strip().decode('utf-8')
 if sys.executable != INTERP:
