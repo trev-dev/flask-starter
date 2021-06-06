@@ -31,7 +31,7 @@ In this repo is flask web-app skeleton for a basic API or Flask powered website.
 <a id="requirements"></a>
 ## Requirements
 
--   [Python](https://www.python.org/downloads/) (preferrably Python3)
+-   [Python](https://www.python.org/downloads/) (preferably Python3)
 -   [Python Pip](https://pip.pypa.io/en/stable/installing/)
 -   [Pipenv](https://pipenv.readthedocs.io/en/latest/) for virtualenv & dependency management.
 
@@ -55,7 +55,7 @@ Optionally:
     ```
 6.  type `flask run` to start your dev server.  
 
-If you want to use the exisitng webpack config or make your own, all the usual steps to run npm need to happen. Once you have Node and NPM installed, run `npm install` to install the dependencies. The scripts `npm start` and `npm run build` handle bundling for development and production respectively.
+If you want to use the existing webpack config or make your own, all the usual steps to run npm need to happen. Once you have Node and NPM installed, run `npm install` to install the dependencies. The scripts `npm start` and `npm run build` handle bundling for development and production respectively.
 
 If you just want to write normal JS/CSS you can use the statics found at `flaskr/static/` folder.
 
@@ -64,7 +64,7 @@ If you just want to write normal JS/CSS you can use the statics found at `flaskr
 
 1.  Setup hosting for a domain and ensure you have [passenger enabled](https://help.dreamhost.com/hc/en-us/articles/216385637-How-do-I-enable-Passenger-on-my-domain) for Python apps.
 2.  Use FTP/SFTP/Git to move your project to its destination on Dreamhost (/home/username/example.com).
-3.  Double check your Flask config at `flaskr/config.py`. It probably wouldn't hurt to make sure these are uncommented/set for production, especially the SECRET_KEY.
+3.  Double check your Flask config at `flaskr/config.py`. It probably wouldn't hurt to make sure these are not commented out and set for production, especially the SECRET_KEY.
 4.  You may need a custom installation of Python3 on Dreamhost for this to work. Please see [Dreamhost's Documentation](https://help.dreamhost.com/hc/en-us/articles/115000702772-Installing-a-custom-version-of-Python-3) on how to do this. The Pipfile for this repo calls for python 3.9. You may use 3.6 if you update the pipenv Pipfile.
 5. Once you've verified a usable Python3 installation, install `pipenv` on your Dreamhost server using `pip3 install pipenv`.
 6. From the website root folder, run `pipenv install` to install the dependencies.
