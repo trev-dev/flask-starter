@@ -19,6 +19,8 @@
 
 Flask Assets (along with cssmin and jsmin) are no longer used. These bundlers are quite out of date and have managed to break scripts. I've chosen to replace them with a webpack toolchain for bundling/minification. You may use it, abuse it or lose it. It's up to you.
 
+If you prefer the old configuration, it still works! The dependencies are even up-to-date. You can find the old config on the [v1 branch](https://github.com/trev-dev/flask-starter/tree/v1)
+
 <a id="whats-included"></a>
 ## What's included
 
